@@ -1,0 +1,42 @@
+<%- include('partials/header') %>
+    <div class="container">
+        <div class="d-flex justify-content-center h-100">
+            <div class="form-container">
+                <p>Share a joke, Brighten our day</p>
+                <form action="/submit" method="POST">
+                    <div class="input-group form-group">
+                        <label class="form-label" for="jokeTitle">Title:</label>
+                    <input type="text" class="form-control" name="jokeTitle" placeholder="What's your joke?">
+                    </div>
+                    
+                    <div class="input-group form-group">
+                        <label class="form-label" for="jokeBody">Joke:</label>
+                        <textarea class="form-control" rows="6" name="jokeBody" placeholder="Type your joke here ..."></textarea>
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" value="Submit" class="btn btn-outline-warning float-right ">
+                    </div>
+                    
+                </form>
+            </div>
+        </div>
+            
+    </div>
+        
+
+    </div>
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+<%- include('partials/footer') %>
